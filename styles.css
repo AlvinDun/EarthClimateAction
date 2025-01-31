@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* GLOBAL STYLES
+-------------------------------
+*/
+
+body {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+
+/* Styling for index.html */
+/* HEADER
+-------------------------------
+*/
+
+header {
+	height: 800px;
+	color: #ffffff;
+    margin: 0 auto;
+}
+
+/* Background image for the index.html */
+#index {
+	background: #2f261d url(Images/background.jpg) center;
+    background-size: cover; /* To cover the entire area specified */
+} 
+
+/* Styling for the main content in index.html */
+#main-index {
+    display: flex; 
+    justify-content: center; /* To align the content to center and have space in the same way */
+    align-items: center; /* To align the content in the center */
+    padding: 50px 20px; 
+    background: #f4f4f4; 
+    background: #2f261d url(Images/in_action.jpg) center;
+    background-size: cover;
+}
+
+/* Layout for "Take Action" and "Learn More" sections */
+.info-section {
+    display: flex;
+    grid-gap: 40px; /* The gap between the grid content */
+    flex-wrap: wrap; 
+    justify-content: center; /* To align the content to center and have space in the same way */
+    text-align: center; /* To align text on thhe center */
+    max-width: 1000px; /* To make sure the button does not go out of the background */
+}
+
+/* Styles for both the information boxes */
+.info-box {
+    background: #ffffff;
+    padding: 30px;
+    width: 400px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-box h2 {
+    color: #007bff; 
+    font-size: 1.8em;
+}
+
+.info-box p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Styling for the first content in a background */
+#content_1 {
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column; /* To make sure the content appears in a column format */
+    padding-top: 30px;
+    margin-top: 100px;
+}
+
+/* Button Styles */
+.button_1 {
+    background: #007bff; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button_1:hover {
+    background: #0056b3; 
+    transform: scale(1.05); 
+}
+
+header h1 {
+    padding-top: 20px;
+}
+
+header img {
+    position: relative;
+    top: 20px; left: 20px;
+    z-index: 10;
+}
+
+
+#wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* NAVIGATION
+-------------------------------
+*/
+nav {
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%; /* = 1200px */
+    padding-top: 90px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: #333;
+	text-decoration: none;
+	padding: 10px 20px 15px 20px; /* Padding across links */
+}
+
+nav a:visited {
+    color: #ffffff;
+	padding: 10px 20px 15px 20px; /* Padding across visited links */
+}
+
+nav a:hover {
+    background-color: #007bff;  /* Background colour when hovering over links */
+}
+
+nav ul {
+    padding-left: 200px;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    font-size: 1.2em;
+    
+}
+
+nav span {
+    padding: 10px 20px 15px 20px;
+    background: #ffffff;
+    color: #000000;
+}
+/* SIDEBAR
+-------------------------------
+*/
+
+/* Sidebar Styling */
+.contact-aside {
+    background: rgba(0, 0, 0, 0.7); /* Dark background for better readability */
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px; 
+    margin: 40px auto;
+}
+
+.contact-aside h3 {
+    font-size: 1.8em;
+}
+
+.contact-aside p {
+    font-size: 1.2em;
+}
+
+/* Clickable Phone and Email Links */
+blockquote a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+blockquote a:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER
+-------------------------------
+*/
+footer {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: auto;
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex;
+    justify-content: center; /* To center content on the center and have space same way */
+}
+
+footer li {
+    display: inline-block; /* To keep the elements in same line */
+    margin-right: 120px; 
+}
+
+
+/* Styling for about.html */
+
+/* Background image for the about.html */
+#about {
+    background: url("Images/background_2.jpg");
+    background-size: cover; /* To cover the entire area specified */
+}
+
+/* Styling for the main content in about.html */
+#about-content {
+    text-align: center; /* To align the text center */
+    font-size: 1.5em;
+    background: rgba(240, 248, 255, 0.7);
+}
+
+/* Styling for the first set of images */
+#image-row {
+    display: flex;
+    justify-content: space-evenly; /* To have even space between images */
+    align-items:center; /* To align images in the center */
+    flex-wrap: wrap; /* To make sure imapge appears on next line when no space */
+}
+
+#image-row a {
+    display: block;  /* Makes the element take up the full width and start on a new line */
+    text-align: center; /* To align text in the center */
+    margin-bottom: 20px; 
+}
+
+#image-row h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333; 
+}
+
+/* Styling for the first set of images */
+#image-row-2 {
+    display: flex;
+    justify-content: space-evenly; /* To have even space between images */
+    align-items:center; /* To align images in the center */
+    flex-wrap: wrap; /* To make sure imapge appears on next line when no space */
+}
+
+#image-row-2 a {
+    display: block;  /* Makes the element take up the full width and start on a new line */
+    text-align: center; /* To align text in the center */
+    margin-bottom: 20px; 
+}
+
+#image-row-2 h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333; 
+}
+
+/* Styling for learn.html */
+
+/* Background image for the learn.html */
+#learn {
+    background: url("Images/background_3.jpg");
+    background-size: cover; /* To cover the entire area specified */
+    height: 700px;
+}
+
+/* Styling for the main content in learn.html */
+#learn-main {
+    background: url("Images/background_3_sub.jpg");
+    background-size: cover; /* To cover the entire area specified */
+}
+
+/* Styling for action.html */
+
+/* Background image for the action.html */
+#action {
+    background: url("Images/background_4.jpg");
+    background-size: cover; /* To cover the entire area specified */
+    margin: 0;
+}
+
+/* Styling for contact.html */
+
+/* Background for the contact.html */
+#contact {
+    background: #202761;
+    height: 400px;
+    margin: 0;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 50px;
+}
+
+/* Styling for the main content in contact.html */
+#contact-main {
+    background: rgba(173, 216, 230, 0.5);
+    margin: 0;
+    padding: 10px;
+}
+
+/* MEDIA QUERIES */
+/* For Smaller Screen Max width: 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .info-section {
+        flex-direction: column; /* For the information box section to appear in column direction */
+    }
+    
+    .info-box {
+        width: 100%;
+        max-width: 350px;
+        flex-direction: column;  /* For the information boxes to appear in column direction */
+    }
+    
+
+    nav ul {
+        padding-left: 120px;
+    }
+}
+
+/* For Medium Screens Min: 800px */
+@media (min-width: 800px) {
+    body {
+        font-size: 18px;
+    }
+
+    .info-section {
+        display: flex;
+        justify-content: space-around; /* To have normal space around the contents */
+    }
+
+    .info-box {
+        max-width: 400px;
+        flex-direction: column; /* For the information boxes to appear in column direction */
+    }
+
+    nav ul {
+        padding-left: 150px;
+    }
+}
+
+/* For Large Screens Min: 1000px */
+@media (min-width: 1000px) {
+    body {
+        font-size: 20px;
+    }
+
+    .info-section {
+        flex-wrap: nowrap; /* Prevents content appearing in new lines */
+    }
+
+    .info-box {
+        max-width: 450px;
+    }
+
+    #wrapper {
+        width: 1200px;
+    }
+        
+    nav ul {
+        padding-left: 200px;
+    }
+}
